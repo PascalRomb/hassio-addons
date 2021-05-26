@@ -15,8 +15,7 @@
   "init": false,
   "host_network": true,
   "map": [
-    "media:rw",
-    "nas:rw"
+    "media:rw"
   ],
   "options": {
     "workgroup": "WORKGROUP",

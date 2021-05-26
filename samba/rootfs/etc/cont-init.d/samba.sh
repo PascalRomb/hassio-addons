@@ -36,7 +36,7 @@ elif bashio::config.has_value 'disk'; then
     disk=$(bashio::config 'disk')
     bashio::log.info "Disk mounting.. ${disk}"
     
-    mkdir nas/ && \
+    mkdir -p nas/ && \
     mount -t auto /dev/disk/by-label/$disk /nas -o nosuid,relatime,noexec && \
     bashio::log.info "Success!"
 fi
