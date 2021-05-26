@@ -1,6 +1,6 @@
 {
   "name": "Samba nas",
-  "version": "9.5.0",
+  "version": "1.0.1",
   "slug": "samba",
   "description": "Expose custom folders and one flash-drive with SMB/CIFS ",
   "url": "https://github.com/PascalRomb/hassio-addons/tree/master/samba",
@@ -14,9 +14,6 @@
   "startup": "services",
   "init": false,
   "host_network": true,
-  "map": [
-    "media:rw"
-  ],
   "options": {
     "workgroup": "WORKGROUP",
     "username": "homeassistant",

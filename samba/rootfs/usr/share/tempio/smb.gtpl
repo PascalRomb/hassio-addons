@@ -30,14 +30,3 @@
    force group = root
    veto_files = /{{ .veto_files | join "/" }}/
    delete veto files = {{ eq (len .veto_files) 0 | ternary "no" "yes" }}
-
-[media]
-   browseable = yes
-   writeable = yes
-   path = /media
-
-   valid users = {{ .username }}
-   force user = root
-   force group = root
-   veto files = /{{ .veto_files | join "/" }}/
-   delete veto files = {{ eq (len .veto_files) 0 | ternary "no" "yes" }}

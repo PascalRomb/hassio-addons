@@ -24,7 +24,6 @@ This addon exposes the following directories over smb (samba):
 
 Directory | Description
 -- | --
-`media` | This is for local media files.
 `nas` | This is for flash drive content files.
 
 ## Configuration
