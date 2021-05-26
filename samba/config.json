@@ -1,0 +1,68 @@
+{
+  "name": "Samba nas",
+  "version": "9.5.0",
+  "slug": "samba",
+  "description": "Expose custom folders and one flash-drive with SMB/CIFS ",
+  "url": "https://github.com/PascalRomb/hassio-addons/tree/master/samba",
+  "arch": [
+    "armhf",
+    "armv7",
+    "aarch64",
+    "amd64",
+    "i386"
+  ],
+  "startup": "services",
+  "init": false,
+  "host_network": true,
+  "map": [
+    "media:rw",
+    "nas:rw"
+  ],
+  "options": {
+    "workgroup": "WORKGROUP",
+    "username": "homeassistant",
+    "password": null,
+    "allow_hosts": [
+      "10.0.0.0/8",
+      "172.16.0.0/12",
+      "192.168.0.0/16",
+      "fe80::/10"
+    ],
+    "veto_files": [
+      "._*",
+      ".DS_Store",
+      "Thumbs.db",
+      "icon?",
+      ".Trashes"
+    ],
+    "compatibility_mode": false,
+    "disk": "PARTITION LABEL"
+  },
+  "schema": {
+    "workgroup": "str",
+    "username": "str",
+    "password": "password",
+    "allow_hosts": [
+      "str"
+    ],
+    "veto_files": [
+      "str"
+    ],
+    "compatibility_mode": "bool",
+    "disk": "str"
+  },
+  "udev": true,
+  "usb": true,
+  "host_dbus": true,
+  "kernel_modules": true,
+  "privileged": [
+    "SYS_ADMIN",
+    "SYS_RAWIO",
+    "SYS_RESOURCE",
+    "SYS_MODULE"
+  ],
+  "full_access": true,
+  "devicetree": false,
+  "apparmor": true,
+  "host_ipc": true
+}
