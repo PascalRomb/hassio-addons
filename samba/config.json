@@ -50,7 +50,6 @@
     "compatibility_mode": "bool",
     "disk": "str"
   },
-  "image": "homeassistant/{arch}-addon-samba",
   "udev": true,
   "usb": true,
   "host_dbus": true,
