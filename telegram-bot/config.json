@@ -13,14 +13,7 @@
     "startup": "application",
     "boot": "auto",
     "options": {
-        "token": "API_TOKEN",
-        "allow_users": [
-            {
-                "id": "chat_id_user",
-                "password": "password",
-                "logged": "false"
-            }
-        ]
+        "token": "API_TOKEN"
     },
     "schema": {
         "token": "str",
