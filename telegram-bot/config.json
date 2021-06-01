@@ -32,6 +32,5 @@
             }
         ]
     },
-    "host_network": true,
-    "image": "node:14"
+    "host_network": true
 }

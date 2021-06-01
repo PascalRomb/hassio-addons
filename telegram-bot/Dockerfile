@@ -1,9 +1,4 @@
-ARG BUILD_FROM
-FROM $BUILD_FROM
-
-# Add env
-ENV LANG C.UTF-8
-
+FROM node:14
 
 #copy resources
 COPY rootfs ./
@@ -11,5 +6,4 @@ COPY rootfs ./
 #install dependencies
 RUN npm install
 
-EXPOSE 8080
 CMD [ "node", "app.js" ]
