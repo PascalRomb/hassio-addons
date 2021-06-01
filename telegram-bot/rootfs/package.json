@@ -1,0 +1,15 @@
+{
+    "name": "utils_telegram_bot",
+    "version": "1.0.0",
+    "description": "utils telegram bot",
+    "author": "Pasquale Rombolà <pasquale.rombola97@gmail.com>",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "express": "^4.16.1",
+        "ngrok": "^3.4.0",
+        "node-telegram-bot-api": "^0.51.0"
+    }
+}
