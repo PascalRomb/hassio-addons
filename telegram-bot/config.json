@@ -13,7 +13,15 @@
     "startup": "application",
     "boot": "auto",
     "options": {
-        "token": "API_TOKEN"
+        "token": "API_TOKEN",
+        "allow_users": [
+            {
+                "id": null,
+                "password": null,
+                "logged": false
+            }
+        ]
+
     },
     "schema": {
         "token": "str",

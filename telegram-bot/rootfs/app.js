@@ -14,7 +14,7 @@ var ACCESS_MAP = new Map();
 
 try {
     console.log("setting up..");
-    const data = fs.readFileSync('/data/option.json', 'utf8');
+    const data = fs.readFileSync('/data/options.json', 'utf8');
 
     const options = JSON.parse(data);
     TOKEN = options.token;
