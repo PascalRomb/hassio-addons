@@ -1,10 +1,6 @@
 const TelegramBot = require('node-telegram-bot-api');
 const fs = require("fs");
 
-// Create a bot that uses 'polling' to fetch new updates
-const bot = new TelegramBot(TOKEN, { polling: true });
-const ngrok = require('ngrok');
-const { exit } = require('process');
 
 // replace the value below with the Telegram token you receive from @BotFather
 var TOKEN = "";
@@ -33,6 +29,11 @@ try {
     process.exit(1);
 }
 
+
+// Create a bot that uses 'polling' to fetch new updates
+const bot = new TelegramBot(TOKEN, { polling: true });
+const ngrok = require('ngrok');
+const { exit } = require('process');
 
 var tunnel_list = new Map();
 
