@@ -21,13 +21,12 @@
                 "logged": false
             }
         ]
-
     },
     "schema": {
         "token": "str",
         "allow_users": [
             {
-                "id": "str",
+                "id": "int",
                 "password": "password",
                 "logged": "bool"
             }

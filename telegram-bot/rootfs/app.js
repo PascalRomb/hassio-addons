@@ -18,7 +18,7 @@ try {
     console.log("Allowed_users", options.allow_users);
     for (let index in options.allow_users) {
         let user = options.allow_users[index];
-        let id = user.id;
+        let id = parseInt(user.id);
         let password = user.password;
         let logged = user.logged;
         ACCESS_MAP.set(id, { password: password, logged: logged });
@@ -125,6 +125,7 @@ function checkPermission(chatId) {
 
 
 function isAdmin(chatId) {
+    console.log("access map", ACCESS_MAP);
     if (!ACCESS_MAP.has(chatId)) {
         bot.sendMessage(chatId, "You are not admin");
         return false;
