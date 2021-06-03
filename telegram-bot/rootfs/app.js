@@ -40,7 +40,6 @@ var tunnel_list = new Map();
 
 bot.onText(/\/start/, (msg) => {
     const chatId = msg.chat.id;
-    if (!isAdmin(chatId)) return;
 
     message = "Hello " + msg.chat.first_name + "! Your id is:" + chatId;
     message += "Please log with /pwd <password>";
